@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = './Search/styles/search.css' rel = 'stylesheet'>
+    <link href="./Search/styles/item_pop_up.css" rel="stylesheet">
+    <link href = './Search/styles/item_history.css' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <script src = './Search/js/search.js' defer type = 'module'></script>
+    <script src = './Search/js/create_review.js' defer type = 'module'></script>
+    <script src = './Search/js/review_history.js' type = 'module'></script>
+    <title>Movie App - Search</title>
+</head>
+<body>
+    <nav class = 'nav-bar nav-bar_search'>
+        <h2 class = 'nav-item nav-item_search'>Search</h2>
+        <span class = 'nav-line nav-line_1'></span>
+        <h2 class = 'nav-item nav-item_watch'>Watch List</h2>
+        <span class = 'nav-line nav-line_2'></span>
+        <h2 class = 'nav-item nav-item_leader'><a href = './Leaderboard/leaderboard.html'>Leaderboard</a></h2>
+        <span class = 'nav-line nav-line_3'></span>
+        <h2 class = 'nav-item nav-item_new'>What's new?</h2>
+    </nav>
+
+    <section class = 'search-bar_section'>
+        <div class='search-input_div'>
+            <input type = 'search' name = 'Search bar' class = 'search-input_bar' placeholder="Search..." value = ''>
+        </div>
+        <div class='results-display_grid'>
+        </div>
+
+    </section>
+    <div class = 'item-pop-up'>
+        <div class='exit-div'>
+            <div class='exit-button'></div>
+        </div>
+        <div class='left-side'>
+            <img src = 'https://image.tmdb.org/t/p/original/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg' class = 'item-img'>
+            <div class='genres-div'>
+                <h4 class = 'genres-title'>Genres</h4>
+                <h3 class = 'item-genres'>Action</h3>
+            </div>
+        </div>
+        <div class='middle'>
+            <h2 class = 'item-title item-piece'>Title</h2>
+            <h3 class = 'item-average-rating item-piece'>8.3/10</h3>
+            <h3 class = 'item-status item-piece'>Status: </h3>
+            <h3 class = 'item-runtime item-piece'>Runtime: </h3>
+
+            <h3 class = 'item-seasons item-piece'>Seasons</h3> 
+            <h3 class = 'item-episodes item-piece'>Episodes</h3>
+            <h3 class = 'item-first-airdate item-piece'>First Air</h3>
+            <h3 class = 'item-last-airdate item-piece'>Last Air</h3>
+            <h3 class = 'item-budget item-piece'>Budget</h3>
+            <h3 class = 'item-revenue item-piece'>Revenue</h3>
+            <h3 class = 'item-release-date item-piece'>Release Date</h3>
+            <h3 class = 'item-tagline item-piece'>Tagline</h3>
+            <div class='disc-div item-piece'>
+                <h3 class = 'disc-title'>Description</h3>
+                <p class = 'item-disc'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, accusantium voluptatum! At sint repellendus nostrum adipisci accusantium quasi distinctio, qui, perferendis molestiae nulla magni aut harum maxime soluta, neque corrupti!</p>
+            </div>
+        </div>
+        <div class='right-side'>
+            <h3 class = 'review-title'>Review</h3>
+            <form class = 'review-form'>
+                <input type = 'date' name = 'review-date' class = 'review-date form-item'>
+                <input type = 'text' name = 'review-season' class = 'review-season form-item' placeholder="Season (optional)">
+                <input type = 'text' name = 'review-episode' class = 'review-episode form-item' placeholder="Episode (optional)">
+                <input type = 'text' name = 'review-rating' class = 'review-rating form-item'>
+                <h3 class = 'review-rating-text'>/100</h3>
+                <textarea name = 'review-notes' class = 'review-notes form-item' placeholder="Notes..."></textarea>
+                <button type = 'button' class = 'review-submit form-item'>Submit</button>
+            </form>
+            <div class='review-history-div'>
+                <h3 class = 'review-history-title history-item'>History</h3>
+                <div class='review-last-entry history-item'>
+                    <h3 class = 'last-review-date'></h3>
+                    <h3 class = 'last-review-score'></h3>
+                    <h3 class = 'last-review-season'></h3>
+                    <h3 class = 'last-review-episode'></h3>
+                    <h3 class = 'last-review-note'></h3>
+                </div>
+                <h3 class = 'history-all-button'>View History</h3>
+            </div>
+
+        </div>
+    </div>
+    <div class='item-review-pop-up'>
+        <div class='review-grid'>
+            <div class='review-title-div'>
+                <h3 class = 'review-grid-title'>X review history</h3>
+                <div class='exit-history-div exit-div'>
+                    <div class='exit-history-button exit-button'></div>
+                </div>
+            </div>
+            <h3 class = 'no-reviews'>0 Reviews :(</h3>
+        </div>
+    </div>
+</body>
+</html>

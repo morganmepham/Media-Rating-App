@@ -1,0 +1,129 @@
+.item-review-pop-up{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(71, 69, 67, 0.592);
+}
+
+.review-grid{
+    border: 3px solid red;
+    width: 85rem;
+    height: 55rem;
+    padding: 1rem;
+
+    background-color: #2c2929;
+    border: 0.6rem solid #292727;
+
+    border-radius: 3rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    align-content: flex-start;
+
+    overflow-y: scroll;
+}
+.review-title-div{
+    display: flex;
+    grid-row: 1/2;
+    border-bottom: 0.5rem solid #292727;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.review-grid-title{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    height: 3.5rem;
+    margin-top: 0.6rem;
+    padding-top: 1rem;
+    width: 93%;
+}
+.exit-history-div{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 7%;
+}
+.exit-history-button{
+    margin-right: 0;
+}
+
+
+.review-grid-item{
+    font-size: 2rem;
+    color: #fff;
+    border: 0.4rem solid #292727;
+    border-radius: 3rem;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    grid-column: 1/3;
+    margin: 1rem;
+
+}
+.review-item-piece{
+    background-color: #242222;
+    border: 0.4rem solid #292727;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    padding-top: 1.1rem;
+    padding-left: 0.5rem;
+    text-align: center;
+}
+.review-item-date{
+    width: 18%;
+    justify-self: flex-start;
+    font-weight: 600;
+}
+.review-item-season{
+    width: 20%;
+    font-weight: 500;
+}
+.review-item-episode{
+    width: 20%;
+    font-weight: 500;
+}
+.review-item-score{
+    width: 20%;
+    font-weight: 500;
+}
+.review-item-note{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.review-grid::-webkit-scrollbar{
+    background: #242222;
+    margin: 2rem;
+    height: 4rem;
+}
+.review-grid::-webkit-scrollbar-track{
+    background: #292727;
+    height: 80%;
+}
+.review-grid::-webkit-scrollbar-thumb{
+    background-color: #4b4848;
+    border-radius: 2rem;
+}
+.review-grid{
+    scrollbar-color: #292727 #242222;
+}
+.no-reviews{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: #FFF;
+}
