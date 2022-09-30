@@ -374,27 +374,26 @@
 
 .last-review-date{
     font-size: 1.2rem;
-    width: 50%;
+    width: 60%;
     height: 1.5rem;
     margin-top: 0.5rem;
 }
 .last-review-score{
     font-size: 1.2rem;
-    width: 50%;
+    width: 40%;
     height: 1.5rem;
     margin-top: 0.5rem;
 }
 .last-review-season{
     font-size: 1.2rem;
-    width: 40%;
+    width: 51%;
     height: 1.5rem;
-    text-align: left;
-    margin-left: 1.3rem;
+    text-align: center;
     margin-top: 0.5rem;
 }
 .last-review-episode{
     font-size: 1.2rem;
-    width: 54%;
+    width: 49%;
     height: 1.5rem;
     margin-top: 0.5rem;
 

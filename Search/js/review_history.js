@@ -60,6 +60,7 @@ function displayReviews(){
             date.classList.add('review-item-piece')
             entryDiv.appendChild(date)
 
+
             const note = document.createElement('p')
             note.innerHTML = `Note: ${reviews[i].note}`
             note.classList.add('review-item-note')

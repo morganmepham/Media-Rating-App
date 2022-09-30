@@ -41,9 +41,6 @@ export function wipeLastReview(){
     let score = document.querySelector('.last-review-score')
     score.innerHTML = ''
 
-    let note = document.querySelector('.last-review-note')
-    note.innerHTML = ''
-
     let season = document.querySelector('.last-review-season')
     season.innerHTML = ''
 
@@ -69,19 +66,21 @@ if(submitButton){
 }
 
 class Review{
-    constructor(title, date, score, note){
+    constructor(title, date, score, note, mediaType = 'Movie'){
         this.title = title
         this.date = date
         this.score = score
         this.note = note
+        this.mediaType = mediaType
     }
 }
 
 class TvReview extends Review{
-    constructor (title, date, score, note, season, episode){
+    constructor (title, date, score, note, season, episode, mediaType = 'Tv'){
         super(title, date, score, note)
         this.season = season
         this.episode = episode
+        this.mediaType = mediaType
     }
 }
 function createReview(){

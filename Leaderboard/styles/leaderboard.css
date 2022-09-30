@@ -64,7 +64,44 @@ a:hover{
     height: 100%;
     border: 0.1rem solid #fff;
 }
-
+.title-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    border: 0.4rem solid #292727;
+    border-radius: 2rem;
+}
+.filter-div{
+    position: absolute;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+}
+.filter-text{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #FFF;
+}
+.filter-select{
+    width: 17rem;
+    background-color: #242222;
+    border: 0.4rem solid #292727;
+    border-radius: 1.5rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+.title{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    order: 1;
+}
 
 .leaderboard-div{
     border: 0.4rem solid #292727;
@@ -72,8 +109,8 @@ a:hover{
     border-radius: 4rem;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    height: 46rem;
-    margin: 2rem;
+    height: 41.2rem;
+    margin: 1rem;
     overflow-y: scroll;
     scrollbar-color: #292727 #242222;
 
@@ -96,20 +133,6 @@ a:hover{
     border-radius: 2rem;
 }
 
-.title-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-}
-.title{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #fff;
-    order: 1;
-}
 .review-item{
     border: 0.3rem solid #fff;
     border-radius: 2rem;
@@ -124,7 +147,7 @@ a:hover{
     align-items: center;
 
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr 0.3fr;
 }
 .review-item-title{
     grid-column: 1/2;
@@ -143,6 +166,9 @@ a:hover{
 }
 .review-item-score{
     grid-column: 5/6;
+}
+.review-item-media{
+    grid-column: 6/7;
 }
 .review-item-note{
     grid-column: 1/7;

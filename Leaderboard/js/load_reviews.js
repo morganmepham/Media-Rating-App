@@ -42,6 +42,16 @@ function displayReviews(e) {
 		date.classList.add('review-item-date')
 		entryDiv.appendChild(date);
 
+		const media = document.createElement('h3')
+		if(reviews[i].mediaType != undefined){
+			let mediaType = reviews[i].mediaType
+			console.log(mediaType)
+			media.innerHTML = mediaType
+			media.classList.add('review-item-piece')
+			media.classList.add('review-item-media')
+			entryDiv.appendChild(media)
+		}
+
 		const note = document.createElement('p');
 		if(reviews[i].note === ''){
 			note.style.display = 'none'
