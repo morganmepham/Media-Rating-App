@@ -11,13 +11,14 @@
     <script src = './Search/js/search.js' defer type = 'module'></script>
     <script src = './Search/js/create_review.js' defer type = 'module'></script>
     <script src = './Search/js/review_history.js' type = 'module'></script>
+    <script src = './Search/js/watch_list_button.js' type = 'module'></script>
     <title>Movie App - Search</title>
 </head>
 <body>
     <nav class = 'nav-bar nav-bar_search'>
         <h2 class = 'nav-item nav-item_search'>Search</h2>
         <span class = 'nav-line nav-line_1'></span>
-        <h2 class = 'nav-item nav-item_watch'>Watch List</h2>
+        <h2 class = 'nav-item nav-item_watch'><a href ='./WatchList/watchlist.html'>Watch List</a></h2>
         <span class = 'nav-line nav-line_2'></span>
         <h2 class = 'nav-item nav-item_leader'><a href = './Leaderboard/leaderboard.html'>Leaderboard</a></h2>
         <span class = 'nav-line nav-line_3'></span>
@@ -40,26 +41,30 @@
             <img src = 'https://image.tmdb.org/t/p/original/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg' class = 'item-img'>
             <div class='genres-div'>
                 <h4 class = 'genres-title'>Genres</h4>
-                <h3 class = 'item-genres'>Action</h3>
+                <h3 class = 'item-genres'></h3>
             </div>
         </div>
         <div class='middle'>
-            <h2 class = 'item-title item-piece'>Title</h2>
-            <h3 class = 'item-average-rating item-piece'>8.3/10</h3>
-            <h3 class = 'item-status item-piece'>Status: </h3>
-            <h3 class = 'item-runtime item-piece'>Runtime: </h3>
+            <h2 class = 'item-title item-piece'></h2>
+            <div class = 'watch-list-div item-piece'>
+                <p class = 'watch-list-text'>Watch List</p>
+                <span class = 'watch-list-check_span'></span>
+            </div>
+            <h3 class = 'item-average-rating item-piece'></h3>
+            <h3 class = 'item-status item-piece'></h3>
+            <h3 class = 'item-runtime item-piece'></h3>
 
-            <h3 class = 'item-seasons item-piece'>Seasons</h3> 
-            <h3 class = 'item-episodes item-piece'>Episodes</h3>
-            <h3 class = 'item-first-airdate item-piece'>First Air</h3>
-            <h3 class = 'item-last-airdate item-piece'>Last Air</h3>
-            <h3 class = 'item-budget item-piece'>Budget</h3>
-            <h3 class = 'item-revenue item-piece'>Revenue</h3>
-            <h3 class = 'item-release-date item-piece'>Release Date</h3>
-            <h3 class = 'item-tagline item-piece'>Tagline</h3>
+            <h3 class = 'item-seasons item-piece'></h3> 
+            <h3 class = 'item-episodes item-piece'></h3>
+            <h3 class = 'item-first-airdate item-piece'></h3>
+            <h3 class = 'item-last-airdate item-piece'></h3>
+            <h3 class = 'item-budget item-piece'></h3>
+            <h3 class = 'item-revenue item-piece'></h3>
+            <h3 class = 'item-release-date item-piece'></h3>
+            <h3 class = 'item-tagline item-piece'></h3>
             <div class='disc-div item-piece'>
                 <h3 class = 'disc-title'>Description</h3>
-                <p class = 'item-disc'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, accusantium voluptatum! At sint repellendus nostrum adipisci accusantium quasi distinctio, qui, perferendis molestiae nulla magni aut harum maxime soluta, neque corrupti!</p>
+                <p class = 'item-disc'></p>
             </div>
         </div>
         <div class='right-side'>

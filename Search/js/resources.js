@@ -1,4 +1,12 @@
+import { checkIfAdded } from "./watch_list_button.js"
 export function setElements(itemData){
+    const isAdded = checkIfAdded()
+    if(isAdded){
+        document.querySelector('.watch-list-check_span').style.backgroundColor = 'green'
+    }else{
+        document.querySelector('.watch-list-check_span').style.backgroundColor = '#fff'
+    }
+
     //Title
     displayTitle(itemData)
     //Image
@@ -36,6 +44,18 @@ export function setElements(itemData){
     //review
     displayReview(itemData)
     document.querySelector('.review-date').valueAsDate = new Date();
+}
+
+
+
+function watchListButtonChange(){
+    const isAdded = checkIfAdded()
+    if(isAdded){
+        const checkBox = document.querySelector('.watch-list-check')
+        const checkBoxSpan = document.querySelector('.watch-list-check_span')
+
+        checkBox.checked = true
+    }
 }
 
 function displayTitle(itemData){
@@ -86,9 +106,9 @@ function displayStatus(itemData){
 function displayRuntime(itemData){
     const runTime = document.querySelector('.item-runtime')
     if(itemData.episode_run_time){
-        runTime.innerHTML = `Ave. Runtime: ${itemData.episode_run_time} Minuets`
+        runTime.innerHTML = `Ave. Runtime: ${itemData.episode_run_time} Minutes`
     }else if(itemData.runtime){
-        runTime.innerHTML = `Runtime: ${itemData.runtime} Minuets`
+        runTime.innerHTML = `Runtime: ${itemData.runtime} Minutes`
     }
 }
 

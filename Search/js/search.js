@@ -126,6 +126,8 @@ function closeInfo(){
     document.querySelector('section').style.display = 'flex'
     document.querySelector('nav').style.display = 'flex'
     document.querySelector('.item-pop-up').style.display = 'none'
+    document.querySelector('.review-rating').value = ''
+    document.querySelector('.review-notes ').value = ''
     wipeLastReview()
 }
 document.querySelector('.exit-button').addEventListener('click', closeInfo)

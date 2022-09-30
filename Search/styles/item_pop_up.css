@@ -132,12 +132,48 @@
 }
 .item-title{
     font-size: 2.4rem;
-    width: 100%;
+    width: 70%;
     padding: 0.3rem;
     margin-top: 2rem;
     padding-top: 1rem;
     padding-left: 1rem;
 }
+.watch-list-div{
+    padding: 0;
+    width: 19%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.watch-list-text{
+    display: inline;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+.watch-list-check{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 2rem;
+}
+.watch-list-check:checked ~ .watch-list-check_span{
+    background-color: green;
+}
+.watch-list-check_span{
+    position: relative;
+    height: 1.7rem;
+    width: 1.7rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.watch-list-check_span:hover{
+    background-color: rgb(175, 170, 170);
+}
+
 
 .item-average-rating{
     width: 28%;
@@ -350,7 +386,8 @@
     background-color: #2c2929;
     color: #fff;
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
+    padding-left: 0.5rem;
 }
 .review-history-title{
     width: 24rem;
@@ -386,14 +423,13 @@
 }
 .last-review-season{
     font-size: 1.2rem;
-    width: 51%;
+    width: 60%;
     height: 1.5rem;
-    text-align: center;
     margin-top: 0.5rem;
 }
 .last-review-episode{
     font-size: 1.2rem;
-    width: 49%;
+    width: 40%;
     height: 1.5rem;
     margin-top: 0.5rem;
 

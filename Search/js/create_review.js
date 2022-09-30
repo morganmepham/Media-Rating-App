@@ -51,7 +51,8 @@ export function wipeLastReview(){
 if(localStorage.getItem('data') === null){
     function start(){
         let data = {
-            reviews:[]
+            reviews:[],
+            watch_later:[]
         }
         data = JSON.stringify(data)
         localStorage.setItem('data', data)
