@@ -30,20 +30,6 @@ function displayReviews(){
             noReviews.style.display = 'none'
             const entryDiv = document.createElement('div')
 
-            const date = document.createElement('h3')
-            let dateData = reviews[i].date
-            let formattedDate = formatDate(dateData)
-            date.innerHTML = formattedDate
-            date.classList.add('review-item-date')
-            date.classList.add('review-item-piece')
-            entryDiv.appendChild(date)
-
-            const score = document.createElement('h3')
-            score.innerHTML = `Score: ${reviews[i].score}/100`
-            score.classList.add('review-item-score')
-            score.classList.add('review-item-piece')
-            entryDiv.appendChild(score)
-
             if(reviews[i].season){
                 const season = document.createElement('h3')
                 season.innerHTML = `Season: ${reviews[i].season}`
@@ -59,6 +45,20 @@ function displayReviews(){
                 episode.classList.add('review-item-piece')
                 entryDiv.appendChild(episode)
             }
+
+            const score = document.createElement('h3')
+            score.innerHTML = `Score: ${reviews[i].score}/100`
+            score.classList.add('review-item-score')
+            score.classList.add('review-item-piece')
+            entryDiv.appendChild(score)
+
+            const date = document.createElement('h3')
+            let dateData = reviews[i].date
+            let formattedDate = formatDate(dateData)
+            date.innerHTML = formattedDate
+            date.classList.add('review-item-date')
+            date.classList.add('review-item-piece')
+            entryDiv.appendChild(date)
 
             const note = document.createElement('p')
             note.innerHTML = `Note: ${reviews[i].note}`

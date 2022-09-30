@@ -361,7 +361,7 @@
     height: 5.5rem;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
 }
 .history-all-button{
     margin-left: 1rem;
@@ -376,11 +376,13 @@
     font-size: 1.2rem;
     width: 50%;
     height: 1.5rem;
+    margin-top: 0.5rem;
 }
 .last-review-score{
     font-size: 1.2rem;
     width: 50%;
     height: 1.5rem;
+    margin-top: 0.5rem;
 }
 .last-review-season{
     font-size: 1.2rem;
@@ -388,11 +390,13 @@
     height: 1.5rem;
     text-align: left;
     margin-left: 1.3rem;
+    margin-top: 0.5rem;
 }
 .last-review-episode{
     font-size: 1.2rem;
     width: 54%;
     height: 1.5rem;
+    margin-top: 0.5rem;
 
 }
 .last-review-note{

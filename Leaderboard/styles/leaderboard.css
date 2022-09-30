@@ -12,8 +12,11 @@ body{
     background-color: #2E2B2B;
 }
 a{
-    color: #fff;
+    color: #9B9B9B;
     text-decoration: none;
+}
+a:hover{
+    color: #FFF;
 }
 
 /* Nav Section*/

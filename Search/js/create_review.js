@@ -12,21 +12,23 @@ export function displayLastReview(){
 
             let lastReviewSeason = document.querySelector('.last-review-season')
             if(reviews[i].season != '' && reviews[i].season != undefined){
+                lastReviewSeason.style.display = 'block'
                 lastReviewSeason.innerHTML = `Season: ${reviews[i].season}`
+            }else{
+                lastReviewSeason.style.display = 'none'
             }
 
             let lastReviewEpisode = document.querySelector('.last-review-episode')
             if(reviews[i].episode != '' && reviews[i].episode != undefined){
+                lastReviewEpisode.style.display = 'block'
                 lastReviewEpisode.innerHTML = `Episode: ${reviews[i].episode}`
+            }else{
+                lastReviewEpisode.style.display = 'none'
             }
             
             let lastReviewScore = document.querySelector('.last-review-score')
             lastReviewScore.innerHTML = `Score: ${reviews[i].score}/100`
             
-            let lastReviewNote = document.querySelector('.last-review-note')
-            let fullNote = reviews[i].note
-            let displayPart = fullNote.substring(0, 30)
-            lastReviewNote.innerHTML = `Note: ${displayPart}...`
             break;
         }
     }
