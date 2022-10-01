@@ -1,5 +1,8 @@
-const watchListButton = document.querySelector('.watch-list-check_span')
-watchListButton.addEventListener('click', watchList)
+let watchListButton
+if(document.querySelector('.watch-list-check_span')){
+    watchListButton = document.querySelector('.watch-list-check_span')
+    watchListButton.addEventListener('click', watchList)
+}
 
 
 

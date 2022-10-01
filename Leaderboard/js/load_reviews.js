@@ -2,6 +2,7 @@
 
 import { getReviews } from '../../Search/js/create_review.js';
 import { formatDate } from '../../Search/js/resources.js';
+console.log('l')
 function displayReviews(e) {
 	let reviews = getReviews();
 	if (reviews.reviews) {
@@ -66,6 +67,7 @@ function displayReviews(e) {
 		reviewGrid.appendChild(entryDiv);
 	}
 	e.preventDefault()
+	console.log('m')
 }
 
 
