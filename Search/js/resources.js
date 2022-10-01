@@ -48,16 +48,6 @@ export function setElements(itemData){
 
 
 
-function watchListButtonChange(){
-    const isAdded = checkIfAdded()
-    if(isAdded){
-        const checkBox = document.querySelector('.watch-list-check')
-        const checkBoxSpan = document.querySelector('.watch-list-check_span')
-
-        checkBox.checked = true
-    }
-}
-
 function displayTitle(itemData){
     let title = document.querySelector('.item-title')
     if(itemData.title){

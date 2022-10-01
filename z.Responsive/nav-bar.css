@@ -1,0 +1,79 @@
+@media screen and (max-width: 1350px){
+    .nav-item{
+        font-size: 2rem;
+    }
+    .nav-item:hover{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 1050px){
+    .nav-item{
+        font-size: 1.7rem;
+    }
+    .nav-item:hover{
+        font-size: 2.1rem;
+    }
+}
+@media screen and (max-width: 850px){
+    .nav-item{
+        font-size: 1.4rem;
+    }
+    .nav-item:hover{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 750px){
+    .nav-item{
+        font-size: 1.2rem;
+    }
+    .nav-item:hover{
+        font-size: 1.6rem;
+    }
+    .nav-bar{
+        height: 13%;
+    }
+}
+@media screen and (max-width: 650px){
+    .nav-item{
+        font-size: 1rem;
+    }
+    .nav-item:hover{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .nav-item{
+        font-size: 0.8rem;
+    }
+    .nav-item:hover{
+        font-size: 1rem;
+    }
+    .nav-bar{
+        position: fixed;
+        bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        width: 100%;
+        height: 10%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .nav-item{
+        font-size: 0.8rem;
+    }
+
+    .nav-bar{
+        height: 8%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .nav-item{
+        font-size: 0.6rem;
+    }
+
+    .nav-bar{
+        height: 7%;
+    }
+}

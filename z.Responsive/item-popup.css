@@ -1,0 +1,337 @@
+@media screen and (max-width: 1620px) {
+    .watch-list-text{
+        font-size: 1.2rem;
+    }
+    .watch-list-check_span{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+@media screen and (max-width: 1325px) {
+    .watch-list-text{
+        font-size: 1rem;
+    }
+    .watch-list-check_span{
+        width: 1.15rem;
+        height: 1.15rem;
+    }
+
+    .item-genres{
+        font-size: 1.5rem;
+    }
+    .item-info{
+        font-size: 1.3rem;
+        margin: 0;
+    }
+    .genres-title{
+        font-size: 1.6rem;
+    }
+    .watch-list-div{
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1100px) {
+    .outer-popup{
+        width: 90%;
+        height: 60%;
+    }
+    .disc-title{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .item-disc{
+        font-size: 1.1rem;
+    }
+    .item-info{
+        font-size: 1.1rem;
+    }
+    .genres-title{
+        font-size: 1.5rem;
+    }
+    .item-genres{
+        font-size: 1.3rem;
+    }
+    .item-title{
+        font-size: 1.9rem;
+    }
+    .right-side{
+        width: 90%;
+        height: 29%;
+    }
+    .review-title{
+        height: 15%;
+    }
+    .review-form{
+        width: 55%;
+        height: 65%;
+    }
+    .review-date{
+        width: 25%;
+        font-size: 1.3rem;
+    }
+    .review-season,
+    .review-episode{
+        width: 15%;
+        font-size: 0.9rem;
+    }
+    .review-rating {
+        font-size: 0.9rem;
+        width: 6%;
+        height: 18%;
+    }
+    .review-rating-text{
+        font-size: 1.2rem;
+    }
+    .review-history-div{
+        width: 40%;
+    }
+    .review-notes{
+        width: 60%;
+    }
+    .review-submit{
+        width: 22%;
+        height: 30%;
+        font-size: 1.3rem;
+    }
+    .review-submit:hover{
+        width: 22%;
+        height: 31%;
+        font-size: 1.4rem;
+    }
+    .review-submit:active{
+        width: 21%;
+        height: 29%;
+        font-size: 1.2rem;
+    }
+    .review-history-div{
+        height: 65%;
+    }
+    .review-history-title{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .history-all-button:hover{
+        font-size: 1.1rem;
+    }
+    .middle{
+        padding-left: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .item-genres{
+        font-size: 1.1rem;
+    }
+    .last-review-season,
+    .last-review-episode,
+    .last-review-date,
+    .last-review-score{
+        font-size: 1rem;
+    }
+    .review-notes{
+        width: 50%;
+    }
+    .review-submit{
+        width: 30%;
+    }
+    .review-date{
+        font-size: 0.8rem;
+    }
+    .review-rating-text{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 715px) {
+    .item-genres{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .item-disc{
+        font-size: 1rem;
+    }
+    .item-info{
+        font-size: 1rem;
+        margin: 0.3rem;
+    }
+    .outer-popup{
+        height: 50%;
+    }
+    .right-side{
+        height: 40%;
+    }
+    .review-title{
+        height: 8%;
+        font-size: 1.4rem;
+    }
+    .review-form{
+        width: 90%;
+        height: 35%;
+    }
+    .review-date{
+        width: 25%;
+        font-size: 1.1rem;
+    }
+    .review-season,
+    .review-episode{
+        width: 15%;
+        font-size: 0.9rem;
+    }
+    .review-rating {
+        font-size: 0.9rem;
+        width: 6%;
+        height: 18%;
+    }
+    .review-rating-text{
+        font-size: 1.2rem;
+    }
+    .review-notes{
+        width: 60%;
+        height: 20%;
+    }
+    .review-history-div{
+        width: 90%;
+        height: 35%;
+    }
+    .review-last-entry {
+        height: 40%;
+    }
+    .review-submit{
+        width: 22%;
+        height: 30%;
+        font-size: 1.3rem;
+    }
+    .review-submit:hover{
+        width: 22%;
+        height: 31%;
+        font-size: 1.4rem;
+    }
+    .review-submit:active{
+        width: 21%;
+        height: 29%;
+        font-size: 1.2rem;
+    }
+    .review-history-title{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .history-all-button:hover{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .item-info{
+        font-size: 0.8rem;
+    }
+    .watch-list-text{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 599px) {
+    .outer-popup{
+        height: 40%;
+        width: 95%;
+        margin-right: 0;
+    }
+    .item-info{
+        font-size: 0.8rem;
+    }
+    .watch-list-div{
+        margin: 0.3rem;
+        height: auto;
+    }
+    .item-title{
+        margin: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .disc-title{
+        font-size: 1rem;
+    }
+    .item-disc{
+        font-size: 0.8rem;
+    }
+    .genres-title{
+        font-size: 1.2rem;
+    }
+    .item-genres{
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+    .right-side{
+        height: 49%;
+    }
+    .review-history-div{
+        height: 40%;
+    }
+}
+@media screen and (max-width: 550px){
+    .outer-popup{
+        height: 50%;
+    }
+    .right-side{
+        height: 40%;
+    }
+    .review-title{
+        height: 5%;
+        font-size: 1rem;
+        padding: 0;
+    }
+    .review-form{
+        width: 90%;
+        height: 35%;
+    }
+    .review-date{
+        width: 25%;
+        font-size: 1.1rem;
+    }
+    .review-season,
+    .review-episode{
+        width: 15%;
+        font-size: 0.9rem;
+    }
+    .review-rating {
+        font-size: 0.9rem;
+        width: 6%;
+        height: 18%;
+    }
+    .review-rating-text{
+        font-size: 1.2rem;
+    }
+    .review-notes{
+        width: 60%;
+        height: 20%;
+    }
+    .review-history-div{
+        width: 90%;
+        height: 35%;
+    }
+    .review-last-entry {
+        height: 40%;
+    }
+    .review-submit{
+        width: 22%;
+        height: 30%;
+        font-size: 1.3rem;
+    }
+    .review-submit:hover{
+        width: 22%;
+        height: 31%;
+        font-size: 1.4rem;
+    }
+    .review-submit:active{
+        width: 21%;
+        height: 29%;
+        font-size: 1.2rem;
+    }
+    .review-history-title{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .history-all-button:hover{
+        font-size: 1.1rem;
+    }
+}
