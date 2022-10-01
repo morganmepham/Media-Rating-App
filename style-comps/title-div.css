@@ -1,0 +1,38 @@
+.title-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    border: 0.4rem solid #292727;
+    border-radius: 2rem;
+}
+.filter-div{
+    position: absolute;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+}
+.filter-text{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #FFF;
+}
+.filter-select{
+    width: 17rem;
+    background-color: #242222;
+    border: 0.4rem solid #292727;
+    border-radius: 1.5rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+.title{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    order: 1;
+}
