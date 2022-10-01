@@ -9,9 +9,7 @@ function addEventListeners(){
 function displayWatchList(){
     const data = getReviews()
     let watchList = data.watch_later
-    console.log(watchList.length)
     for(let i = watchList.length -1 ; i >= 0 ; i--){
-        console.log(watchList[i])
         const watchListDiv = document.querySelector('.watchlist-div')
 
         const entryDiv = document.createElement('div')

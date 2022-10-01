@@ -30,7 +30,7 @@ function getOptions(){
         removeOptions()
         return
     }else{
-        getData(currentSearch).then(res => showOptions(res)).then(() => add())
+        getData(currentSearch).then(res => showOptions(res)).then(() => checkResults()).then(() => add())
     }
 }
 
@@ -51,64 +51,153 @@ function showOptions(res){
     let results = res.results
     let count = (results.length < 5) ? results.length : 5
     for(let i = 0; i < count; i++){
-        if(results[i].media_type === 'person'){
-            count++
-            continue;
+        if(results[i]){
+
+            if(results[i].media_type === 'person'){
+                count++
+                continue;
+            }
+            let mediaType = results[i].media_type
+            let div = document.createElement('div')
+            div.classList.add('result-div')
+            document.querySelector('.results-display_grid').appendChild(div)
+    
+            let img = document.createElement('img')
+            let posterPath = results[i].poster_path;
+            let imgPath = `https://image.tmdb.org/t/p/original/${posterPath}`
+            img.src = imgPath
+            img.classList.add('poster-img')
+            img.classList.add(mediaType)
+            img.classList.add(results[i].id)
+            img.classList.add('clickable')
+            if(posterPath != null){
+                div.appendChild(img)
+            }
+    
+            let titleElem = document.createElement('h3')
+            titleElem.classList.add('title-elem')
+            titleElem.classList.add(mediaType)
+            titleElem.classList.add(results[i].id)
+            titleElem.classList.add('clickable')
+            if(results[i].title){
+                let titleText = results[i].title
+                let date = results[i].release_date
+                let year = date.substring(0, 4)
+                let dateText = `(${year})`
+                let fullText = titleText + ' ' + dateText
+                titleElem.innerHTML = fullText
+            }else if(!results[i].title){
+                let titleText = results[i].name
+                let date = results[i].first_air_date
+                let year = date.substring(0, 4)
+                let dateText = `(${year})`
+                let fullText = titleText + ' ' + dateText
+                titleElem.innerHTML = fullText
+            }
+            div.appendChild(titleElem)
+    
+            
+    
+            let type = mediaType.charAt(0).toUpperCase() + mediaType.slice(1)
+            let mediaElem = document.createElement('h3')
+            mediaElem.classList.add('media-elem')
+            mediaElem.classList.add(mediaType)
+            mediaElem.classList.add(results[i].id)
+            mediaElem.classList.add('clickable')
+            mediaElem.innerHTML = type
+            div.classList.add(mediaType)
+            div.classList.add(results[i].id)
+            div.classList.add('clickable')
+            div.appendChild(mediaElem)
         }
-        let mediaType = results[i].media_type
-        let div = document.createElement('div')
-        div.classList.add('result-div')
-        document.querySelector('.results-display_grid').appendChild(div)
+    }
 
-        let img = document.createElement('img')
-        let posterPath = results[i].poster_path;
-        let imgPath = `https://image.tmdb.org/t/p/original/${posterPath}`
-        img.src = imgPath
-        img.classList.add('poster-img')
-        img.classList.add(mediaType)
-        img.classList.add(results[i].id)
-        img.classList.add('clickable')
-        if(posterPath != null){
-            div.appendChild(img)
+}
+
+
+async function checkResults(){
+    const resultDisplays = document.querySelectorAll('.result-div')
+    if(resultDisplays.length < 5){
+        let results2 = await backUpData()
+        results2 = results2.results
+        let difference = 5 - resultDisplays.length
+        for(let i = 0; i < difference; i++){
+            if(results2[i].media_type === 'person'){
+                count++
+                continue;
+            }
+            let mediaType = results2[i].media_type
+            let div = document.createElement('div')
+            div.classList.add('result-div')
+            document.querySelector('.results-display_grid').appendChild(div)
+    
+            let img = document.createElement('img')
+            let posterPath = results2[i].poster_path;
+            let imgPath = `https://image.tmdb.org/t/p/original/${posterPath}`
+            img.src = imgPath
+            img.classList.add('poster-img')
+            img.classList.add(mediaType)
+            img.classList.add(results2[i].id)
+            img.classList.add('clickable')
+            if(posterPath != null){
+                div.appendChild(img)
+            }
+    
+            let titleElem = document.createElement('h3')
+            titleElem.classList.add('title-elem')
+            titleElem.classList.add(mediaType)
+            titleElem.classList.add(results2[i].id)
+            titleElem.classList.add('clickable')
+            if(results2[i].title){
+                let titleText = results2[i].title
+                let date = results2[i].release_date
+                let year = date.substring(0, 4)
+                let dateText = `(${year})`
+                let fullText = titleText + ' ' + dateText
+                titleElem.innerHTML = fullText
+            }else if(!results2[i].title){
+                let titleText = results2[i].name
+                let date = results2[i].first_air_date
+                let year = date.substring(0, 4)
+                let dateText = `(${year})`
+                let fullText = titleText + ' ' + dateText
+                titleElem.innerHTML = fullText
+            }
+            div.appendChild(titleElem)
+    
+            
+    
+            let type = mediaType.charAt(0).toUpperCase() + mediaType.slice(1)
+            let mediaElem = document.createElement('h3')
+            mediaElem.classList.add('media-elem')
+            mediaElem.classList.add(mediaType)
+            mediaElem.classList.add(results2[i].id)
+            mediaElem.classList.add('clickable')
+            mediaElem.innerHTML = type
+            div.classList.add(mediaType)
+            div.classList.add(results2[i].id)
+            div.classList.add('clickable')
+            div.appendChild(mediaElem)
         }
-
-        let titleElem = document.createElement('h3')
-        titleElem.classList.add('title-elem')
-        titleElem.classList.add(mediaType)
-        titleElem.classList.add(results[i].id)
-        titleElem.classList.add('clickable')
-        if(results[i].title){
-            let titleText = results[i].title
-            let date = results[i].release_date
-            let year = date.substring(0, 4)
-            let dateText = `(${year})`
-            let fullText = titleText + ' ' + dateText
-            titleElem.innerHTML = fullText
-        }else if(!results[i].title){
-            let titleText = results[i].name
-            let date = results[i].first_air_date
-            let year = date.substring(0, 4)
-            let dateText = `(${year})`
-            let fullText = titleText + ' ' + dateText
-            titleElem.innerHTML = fullText
-        }
-        div.appendChild(titleElem)
-
-        
-
-        let type = mediaType.charAt(0).toUpperCase() + mediaType.slice(1)
-        let mediaElem = document.createElement('h3')
-        mediaElem.classList.add('media-elem')
-        mediaElem.classList.add(mediaType)
-        mediaElem.classList.add(results[i].id)
-        mediaElem.classList.add('clickable')
-        mediaElem.innerHTML = type
-        div.classList.add(mediaType)
-        div.classList.add(results[i].id)
-        div.classList.add('clickable')
-        div.appendChild(mediaElem)
     }
 }
+
+async function backUpData(){
+    let query2 = document.querySelector('.search-input_bar').value
+    const apiKey = 'fe04b6e96b0d5acb257458f989b43f0b'
+    const fullRequestKey = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${query2}&page=2&include_adult=false`
+
+    try{
+        const response = await fetch(fullRequestKey)
+        if(response.ok){
+            let result = await response.json()
+            return result
+        }
+    }catch(err){
+        console.log(err)
+    }
+}
+
 
 function add(){
     const results = document.querySelectorAll('.clickable')

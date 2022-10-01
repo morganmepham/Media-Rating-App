@@ -2,13 +2,11 @@
 
 import { getReviews } from '../../Search/js/create_review.js';
 import { formatDate } from '../../Search/js/resources.js';
-console.log('l')
 function displayReviews(e) {
 	let reviews = getReviews();
 	if (reviews.reviews) {
 		reviews = reviews.reviews;
 	}
-	console.log(reviews)
 	for (let i = reviews.length - 1; i >= 0; i--) {
         const entryDiv = document.createElement('div')
 
@@ -46,7 +44,6 @@ function displayReviews(e) {
 		const media = document.createElement('h3')
 		if(reviews[i].mediaType != undefined){
 			let mediaType = reviews[i].mediaType
-			console.log(mediaType)
 			media.innerHTML = mediaType
 			media.classList.add('review-item-piece')
 			media.classList.add('review-item-media')
@@ -67,7 +64,6 @@ function displayReviews(e) {
 		reviewGrid.appendChild(entryDiv);
 	}
 	e.preventDefault()
-	console.log('m')
 }
 
 
