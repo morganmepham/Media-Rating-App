@@ -23,10 +23,14 @@ function displayWatchList(){
         entryDiv.appendChild(image)
 
         const title = document.createElement('h3')
-
         title.innerHTML = `${watchList[i].title}`
         title.classList.add('watchlist-title')
         entryDiv.appendChild(title)
+
+        const mediaType = document.createElement('h3')
+        mediaType.innerHTML = `(${watchList[i].mediaType})`
+        mediaType.classList.add('watchlist-media')
+        entryDiv.appendChild(mediaType)
 
         const genres = document.createElement('h3')
         genres.innerHTML = watchList[i].genres
