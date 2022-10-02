@@ -378,7 +378,7 @@
     height: 50%;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: space-around;
 }
 .history-all-button{
     margin-left: 1rem;

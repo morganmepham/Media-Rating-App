@@ -118,6 +118,7 @@
     }
     .item-genres{
         font-size: 0.8rem;
+        margin: 0.2rem;
     }
     .review-button{
         width: 40%;
@@ -150,9 +151,13 @@
     .item-info{
         font-size: 0.6rem;
         width: 80%;
+        border: 0.2rem solid #292727
     }
-    .watch-list-div{
-        text-align: center;
+    .review-button {
+        border: 0.1rem solid #fff;
+    }
+    .watch-list-text{
+        border: none;
     }
     .watch-list-check_span{
         margin-right: 0.3rem;
@@ -164,7 +169,9 @@
         font-size: 0.8rem;
     }
     .item-genres{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        font-weight: 300;
+        padding: 0.3rem;
     }
     .review-button{
         width: 40%;
@@ -175,7 +182,8 @@
     .watch-list-div{
         width: 40%;
         height: 3%;
-        border: 0.2rem solid #fff;
+        border: 0.1rem solid #fff;
+        text-align: center;
     }
     .watch-list-check_span{
         width: 0.8rem;
@@ -183,5 +191,17 @@
     }
     .item-img{
         height: 30%;
+    }
+}
+@media screen and (max-width: 300px){
+    .watch-list-div{
+        width: 80%;
+    }
+    .review-button{
+        width: 80%;
+    }
+    .item-genres{
+        font-size: 0.5rem;
+
     }
 }

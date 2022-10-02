@@ -1,0 +1,160 @@
+@media screen and (max-width: 1400px){
+    .right-side{
+        width: 90%;
+    }
+    .review-title{
+        height: 10%;
+    }
+    .review-exit-button{
+        height: 10%;
+        padding-top: 0.5rem;
+    }
+
+    .review-form{
+        width: 60%;
+        height: 70%;
+    }
+    .review-date{
+        width: 20%;
+        font-size: 1.2rem;
+    }
+    .review-season,
+    .review-episode{
+        width: 20%;
+    }
+    .review-history-div{
+        width: 30%;
+        height: 70%;
+    }
+    .review-submit{
+        height: 11%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .review-rating-text{
+        font-size: 1rem;
+    }
+    .review-history-title {
+        font-size: 1.4rem;
+        height: 7%;
+    }
+    .review-season,
+    .review-episode,
+    .review-date{
+        font-size: 0.8rem;
+    }
+    .last-review-season,
+    .last-review-episode,
+    .last-review-date,
+    .last-review-score{
+        font-size: 1rem;
+        width: 90%;
+        text-align: center;
+        margin: 0.3rem;
+    }
+    .review-last-entry {
+        height: 60%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .review-rating{
+        width: 10%;
+    }
+    .review-season,
+    .review-episode,
+    .review-date{
+        width: 25%;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .review-title{
+        font-size: 1.3rem;
+        height: 6%;
+        width: 55%;
+    }   
+    .review-exit-button {
+        height: 6%;
+        padding: 0.4rem;
+    }
+
+    .review-form{
+        width: 90%;
+        height: 40%;
+    }
+    .review-season,
+    .review-episode,
+    .review-date{
+        width: 15%;
+        height: 10%;
+    }
+    .review-rating{
+        width: 5%;
+        height: 10%;
+    }
+    .review-notes{
+        height: 30%;
+        font-size: 1rem;
+    }
+    .review-submit {
+        height: 15%;
+        font-size: 1rem;
+    }
+    .review-history-div{
+        width: 90%;
+        height: 35%;
+    }
+    .review-last-entry{
+        height: 40%;
+        justify-content: center;
+    }
+    .last-review-season,
+    .last-review-episode,
+    .last-review-date,
+    .last-review-score{
+        font-size: 1rem;
+        width: 40%;
+        text-align: center;
+        margin: 0.3rem;
+    }
+    .review-history-title {
+        height: 10%;
+        font-size: 1rem;
+    }
+    .history-all-button{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .last-review-season,
+    .last-review-episode,
+    .last-review-date,
+    .last-review-score{
+        font-size: 0.8rem;
+        width: 40%;
+    }
+    .review-notes{
+        height: 20%;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .last-review-season,
+    .last-review-episode,
+    .last-review-date,
+    .last-review-score{
+        font-size: 0.6rem;
+        width: 40%;
+    }
+    .review-notes{
+        height: 12%;
+        font-size: 0.8rem;
+    }
+    .review-submit{
+        font-size: 0.7rem;
+    }
+
+}
