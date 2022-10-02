@@ -304,21 +304,21 @@
 }
 .review-date{
     width: 70%;
-    height: 7%;
+    height: 6%;
 }
 .review-season{
     width: 40%;
-    height: 7%;
+    height: 6%;
     font-size: 1.1rem;
 }
 .review-episode{
     width: 40%;
-    height: 7%;
+    height: 6%;
     font-size: 1.1rem;
 }
 .review-rating{
     width: 8%;
-    height: 8%;
+    height: 6%;
 }
 .review-rating-text{
     padding-top: 1rem;
