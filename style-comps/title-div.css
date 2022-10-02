@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 12%;
     margin: 1rem;
     margin-bottom: 0;
     border: 0.4rem solid #292727;
@@ -13,6 +13,7 @@
     left: 4rem;
     display: flex;
     align-items: center;
+    width: 35%;
 }
 .filter-text{
     font-size: 2rem;
@@ -20,7 +21,7 @@
     color: #FFF;
 }
 .filter-select{
-    width: 17rem;
+    width: 60%;
     background-color: #242222;
     border: 0.4rem solid #292727;
     border-radius: 1.5rem;

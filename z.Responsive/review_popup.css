@@ -139,6 +139,7 @@
     }
     .review-notes{
         height: 20%;
+        margin-bottom: 0;
     }
     .review-rating {
         font-size: 0.9rem;

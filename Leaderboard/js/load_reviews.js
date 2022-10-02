@@ -13,12 +13,14 @@ function displayReviews(e) {
 		const title = document.createElement('h3')
 		title.innerHTML = reviews[i].title
 		title.classList.add('review-item-title')
+		title.classList.add('leader-info')
 		entryDiv.appendChild(title)
 
 		if (reviews[i].season) {
 			const season = document.createElement('h3');
 			season.innerHTML = `Season: ${reviews[i].season}`;
 			season.classList.add('review-item-season')
+			season.classList.add('leader-info')
 			entryDiv.appendChild(season);
 		}
 
@@ -26,12 +28,14 @@ function displayReviews(e) {
 			const episode = document.createElement('h3');
 			episode.innerHTML = `Episode: ${reviews[i].episode}`;
 			episode.classList.add('review-item-episode')
+			episode.classList.add('leader-info')
 			entryDiv.appendChild(episode);
 		}
 
 		const score = document.createElement('h3');
 		score.innerHTML = `Score: ${reviews[i].score}/100`;
 		score.classList.add('review-item-score')
+		score.classList.add('leader-info')
 		entryDiv.appendChild(score);
 
 		const date = document.createElement('h3');
@@ -39,6 +43,7 @@ function displayReviews(e) {
 		let formattedDate = formatDate(dateData);
 		date.innerHTML = formattedDate;
 		date.classList.add('review-item-date')
+		date.classList.add('leader-info')
 		entryDiv.appendChild(date);
 
 		const media = document.createElement('h3')
@@ -47,6 +52,7 @@ function displayReviews(e) {
 			media.innerHTML = mediaType
 			media.classList.add('review-item-piece')
 			media.classList.add('review-item-media')
+			media.classList.add('leader-info')
 			entryDiv.appendChild(media)
 		}
 
@@ -56,6 +62,7 @@ function displayReviews(e) {
 		}
 		note.innerHTML = `Note: ${reviews[i].note}`;
 		note.classList.add('review-item-note')
+		note.classList.add('leader-info')
 		entryDiv.appendChild(note);
 
 		const reviewGrid = document.querySelector('.leaderboard-div');

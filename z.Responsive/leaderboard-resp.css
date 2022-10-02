@@ -1,0 +1,11 @@
+@media screen and (max-width: 1400px){
+    .title{
+        font-size: 2rem;
+    }
+    .filter-text{
+        font-size: 1.8rem;
+    }
+    .leader-info{
+        font-size: 1.5rem;
+    }
+}
