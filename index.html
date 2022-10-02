@@ -10,7 +10,7 @@
     <link href = './Search/styles/search.css' rel = 'stylesheet'>
     <link href="./Search/styles/item_pop_up.css" rel="stylesheet">
     <link href = './Search/styles/item_history.css' rel="stylesheet">
-    <link rel="stylesheet" href="./z.Responsive/item-popup.css">
+    <link rel="stylesheet" href="./z.Responsive/maybe.css">
     <link rel="stylesheet" href="./z.Responsive/search-results.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
 
@@ -19,6 +19,7 @@
     <script src = './Search/js/create_review.js' defer type = 'module'></script>
     <script src = './Search/js/review_history.js' type = 'module'></script>
     <script src = './Search/js/watch_list_button.js' type = 'module'></script>
+    <script src="./Search/js/review-button.js" defer></script> 
     <title>Movie App - Search</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
     </section>
     <div class = 'item-pop-up'>
         <div class='exit-div'>
-            <div class='exit-button'></div>
+            <div class='exit-button pop-up-exit'></div>
         </div>
         <div class='outer-popup'>
             <div class='left-side'>
@@ -52,8 +53,9 @@
             </div>
             <div class='middle'>
                 <h2 class = 'item-title item-piece'></h2>
+                <h4 class = 'review-button item-piece item-info'>Review</h4>
                 <div class = 'watch-list-div item-piece'>
-                    <p class = 'watch-list-text'>My List</p>
+                    <p class = 'watch-list-text item-info'>My List</p>
                     <span class = 'watch-list-check_span'></span>
                 </div>
                 <h3 class = 'item-average-rating item-piece item-info'></h3>
@@ -76,6 +78,7 @@
         </div>
         <div class='right-side'>
             <h3 class = 'review-title'>Review</h3>
+            <h3 class = 'review-exit-button form-item'>X</h3>
             <form class = 'review-form'>
                 <input type = 'date' name = 'review-date' class = 'review-date form-item'>
                 <input type = 'text' name = 'review-season' class = 'review-season form-item' placeholder="Season (optional)">

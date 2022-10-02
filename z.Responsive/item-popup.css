@@ -20,7 +20,7 @@
     }
 
     .item-genres{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .item-info{
         font-size: 1.3rem;
@@ -39,9 +39,6 @@
     .item-disc{
         font-size: 1.4rem;
     }
-}
-@media screen and (max-width: 1200px) {
-
 }
 @media screen and (max-width: 1100px) {
     .outer-popup{
