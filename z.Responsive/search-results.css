@@ -2,6 +2,9 @@
     .title-elem{
         font-size: 1.7rem;
     }
+    .search-input_bar{
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (max-width: 1000px){
