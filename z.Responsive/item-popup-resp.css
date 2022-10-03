@@ -12,11 +12,6 @@
         display: none;
         position: absolute;
     }
-    .review-exit-button{
-        display: block;
-        margin-top: 0.5rem;
-        height: 5%;
-    }
     .review-title{
         width: 80%;
         height: 9%;

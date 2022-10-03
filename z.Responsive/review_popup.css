@@ -5,10 +5,7 @@
     .review-title{
         height: 10%;
     }
-    .review-exit-button{
-        height: 10%;
-        padding-top: 0.5rem;
-    }
+
 
     .review-form{
         width: 60%;
@@ -74,11 +71,6 @@
         height: 6%;
         width: 55%;
     }   
-    .review-exit-button {
-        height: 6%;
-        padding: 0.4rem;
-    }
-
     .review-form{
         width: 90%;
         height: 40%;
@@ -99,6 +91,14 @@
         font-size: 1rem;
     }
     .review-submit {
+        height: 15%;
+        font-size: 1rem;
+    }
+    .review-submit:hover{
+        height: 16%;
+        font-size: 1.1rem;
+    }
+    .review-submit:active{
         height: 15%;
         font-size: 1rem;
     }
@@ -126,6 +126,9 @@
     .history-all-button{
         font-size: 0.8rem;
     }
+    .history-all-button:hover{
+        font-size: 0.9rem;
+    }
 
 }
 
@@ -138,7 +141,7 @@
         width: 40%;
     }
     .review-notes{
-        height: 20%;
+        height: 15%;
         margin-bottom: 0;
     }
     .review-rating {
@@ -170,6 +173,14 @@
         font-size: 0.8rem;
     }
     .review-submit{
+        font-size: 0.7rem;
+    }
+    .review-submit:hover{
+        height: 16%;
+        font-size: 0.8rem;
+    }
+    .review-submit:active{
+        height: 15%;
         font-size: 0.7rem;
     }
 

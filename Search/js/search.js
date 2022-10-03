@@ -219,7 +219,7 @@ function closeInfo(){
     document.querySelector('.review-notes ').value = ''
     wipeLastReview()
 }
-document.querySelector('.exit-button').addEventListener('click', closeInfo)
+document.querySelector('.popup-exit-button').addEventListener('click', closeInfo)
 
 
 // populate item page

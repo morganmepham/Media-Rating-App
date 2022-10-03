@@ -1,32 +1,67 @@
-.exit-div{
+.popup-exit-div{
     width: 100%;
-    height: 6rem;
+    height: 10%;
     display: flex;
+    justify-content: flex-end;
 }
-.exit-button {
-    height: 4rem;
-    width: 4rem;
-    background-color: #2c2929;
-    border-radius: 1rem;
-    position: relative;
+.popup-exit-button{
+    width: 4.5rem;
+    height: 2rem;
     border: 0.2rem solid #292727;
+    background-color: #2c2929;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+.popup-exit-button:hover{
+    width: 4.6rem;
+    height: 2.1rem;
+    font-size: 1.4rem;
+}
+.popup-exit-button:active{
+    width: 4.4rem;
+    height: 1.9rem;
+    font-size: 1.3rem;
 }
 
-.exit-button:after {
-    position: absolute;
-    height: 5rem;
-    bottom: 0.1rem;
-    left: 0;
-    right: 0;
-    content: "\d7"; 
-    font-size: 5rem;
-    text-align: center;
+
+.review-exit-button{
+    margin-top: 0.5rem;
+    height: auto;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242222;
+    border: 0.2rem solid #292727;
+    font-size: 1.5rem;
 }
-.exit-button:hover{
-    height: 4.2rem;
-    width: 4.2rem;
+.review-exit-button:hover{
+    font-size: 1.6rem;
 }
-.exit-button:hover:after{
-    font-size: 5.2rem;
-    bottom: 0.2rem;
+.review-exit-button:active{
+    width: 9.5%;
+    font-size: 1.4rem;
+}
+
+.item-review-exit-button{
+    margin-top: 0.5rem;
+    height: auto;
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242222;
+    border: 0.2rem solid #292727;
+    font-size: 1.5rem;
+}
+.item-review-exit-button:hover{
+    font-size: 1.6rem;
+}
+.item-review-exit-button:active{
+    font-size: 1.4rem;
+    width: 11%;
 }

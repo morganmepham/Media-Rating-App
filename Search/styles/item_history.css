@@ -36,6 +36,7 @@
     border-bottom: 0.5rem solid #292727;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    justify-content: space-around;
 }
 .review-grid-title{
     font-size: 2.5rem;
@@ -45,19 +46,8 @@
     margin-top: 0.6rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 93%;
+    width: 80%;
 }
-.exit-history-div{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 5%;
-    height: 50%;
-}
-.exit-history-button{
-    margin-right: 0;
-    color: #fff;
-}
-
 
 .review-grid-item{
     font-size: 2rem;

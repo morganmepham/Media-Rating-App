@@ -1,0 +1,124 @@
+@media screen and (max-width: 750px){
+    .review-exit-button{
+        font-size: 1.3rem;
+    }
+    .review-exit-button:hover{
+        font-size: 1.4rem;
+    }
+    .review-exit-button:active{
+        font-size: 1.3rem;
+    }
+    .item-review-exit-button{
+        font-size: 1.2rem;
+        height: 50%;
+    }
+    .item-review-exit-button:hover{
+        font-size: 1.3rem;
+    }
+    .item-review-exit-button:active{
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .review-exit-button{
+        font-size: 1.1rem;
+    } 
+    .review-exit-button:hover{
+        font-size: 1.2rem;
+    }
+    .review-exit-button:active{
+        font-size: 1.1rem;
+    }
+    .item-review-exit-button{
+        font-size: 1.1rem;
+    }
+    .item-review-exit-button:hover{
+        font-size: 1.2rem;
+    }
+    .item-review-exit-button:active{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .popup-exit-button{
+        height: 1.5rem;
+        width: 3.6rem;
+        font-size: 0.9rem;
+    }
+    .popup-exit-button:hover{
+        height: 1.6rem;
+        width: 3.7rem;
+        font-size: 1rem;
+    }
+    .popup-exit-button:active{
+        width: 3.6rem;
+        height: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .review-exit-button{
+        font-size: 1rem;
+    } 
+    .review-exit-button:hover{
+        font-size: 1.1rem;
+    }
+    .review-exit-button:active{
+        font-size: 1rem;
+    }
+    .item-review-exit-button{
+        font-size: 1rem;
+        width: 20%;
+    }
+    .item-review-exit-button:hover{
+        font-size: 1.1rem;
+        width: 20%;
+    }
+    .item-review-exit-button:active{
+        font-size: 1rem;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 400px){
+    .review-exit-button{
+        font-size: 1rem;
+        width: 20%;
+    }
+    .review-exit-button:active{
+        font-size: 1rem;
+        width: 20%;
+    }
+    .review-grid-title{
+        font-size: 1rem;
+    }
+    .item-review-exit-button{
+        font-size: 0.9rem;
+        width: 20%;
+    }
+    .item-review-exit-button:hover{
+        font-size: 1rem;
+    }
+    .item-review-exit-button:active{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .review-exit-button{
+        font-size: 0.8rem;
+    } 
+    .review-exit-button:hover{
+        font-size: 0.9rem;
+    }
+    .review-exit-button:active{
+        font-size: 0.8rem;
+    }
+    .item-review-exit-button{
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+    }
+    .item-review-exit-button:hover{
+        font-size: 0.8rem;
+    }
+    .item-review-exit-button:active{
+        font-size: 0.7rem;
+    }
+}

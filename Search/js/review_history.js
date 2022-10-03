@@ -13,10 +13,6 @@ function setHistoryTitle(){
 import { getReviews } from './create_review.js'
 import { formatDate } from './resources.js';
 
-const test = document.querySelector('.review-grid-title')
-test.addEventListener('click', fillHistoryPopUp)
-
-
 function displayReviews(){
     console.log('m')
     let reviews = getReviews()
@@ -76,7 +72,7 @@ function displayReviews(){
     historyPopUp.style.display = 'flex'
 }
 
-const closeHistoryButton = document.querySelector('.exit-history-button')
+const closeHistoryButton = document.querySelector('.item-review-exit-button')
 closeHistoryButton.addEventListener('click', closeHistory)
 function closeHistory(){
     const historyTab = document.querySelector('.item-review-pop-up')
