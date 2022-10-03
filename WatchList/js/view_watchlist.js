@@ -1,7 +1,7 @@
 import { getReviews } from '../../Search/js/create_review.js'
 
 function addEventListeners(){
-    const removeButtons = document.querySelectorAll('.remove-from-watchlist')
+    const removeButtons = document.querySelectorAll('.watchlist-exit-button')
     removeButtons.forEach(button => {
         button.addEventListener('click', removeButton)
     });
@@ -25,6 +25,11 @@ function displayWatchList(){
         title.classList.add('watchlist-title')
         entryDiv.appendChild(title)
 
+        const button = document.createElement('h3')
+        button.classList.add('watchlist-exit-button')
+        button.innerHTML = 'Remove'
+        entryDiv.appendChild(button)
+
         const mediaType = document.createElement('h3')
         mediaType.innerHTML = `(${watchList[i].mediaType})`
         mediaType.classList.add('watchlist-media')
@@ -35,13 +40,6 @@ function displayWatchList(){
         genres.classList.add('watchlist-genres')
         entryDiv.appendChild(genres)
 
-        const buttonDiv = document.createElement('div')
-        buttonDiv.classList.add('exit-div')
-        const button = document.createElement('div')
-        button.classList.add('exit-button')
-        button.classList.add('remove-from-watchlist')
-        buttonDiv.appendChild(button)
-        entryDiv.appendChild(buttonDiv)
 
         watchListDiv.appendChild(entryDiv)
     }
@@ -55,16 +53,14 @@ window.addEventListener('load', displayWatchList)
 function removeButton(e){
     removeFromWatchList(e)
     const item = e.target.parentNode
-    const container = item.parentNode
-    const grid = container.parentNode
-    grid.removeChild(container)
+    const grid = item.parentNode
+    grid.removeChild(item)
 }
 
 
 function removeFromWatchList(e){
     const targetParent = e.target.parentNode
-    const container = targetParent.parentNode 
-    const children = container.children
+    const children = targetParent.children
     
     const title = children[1].innerHTML
     const data = getReviews()

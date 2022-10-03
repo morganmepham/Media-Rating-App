@@ -1,3 +1,183 @@
 @media screen and (max-width: 1400px) {
-    
+    .watchlist-title{
+        font-size: 1.6rem;
+    }
+    .watchlist-genres{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .watchlist-title{
+        font-size: 1.5rem;
+    }
+    .watchlist-genres{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .watchlist-title{
+        font-size: 1.4rem;
+    }
+    .watchlist-media{
+        font-size: 0.8rem;
+    }
+    .watchlist-genres{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .watchlist-div{
+        padding: 1rem;
+    }
+    .watchlist-item{
+        margin: 0.7rem;
+    }
+    .watchlist-title{
+        font-size: 1.3rem;
+    }
+    .watchlist-media{
+        font-size: 0.7rem;
+    }
+    .watchlist-genres{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .watchlist-div{
+        padding: 0.6rem;
+    }
+    .watchlist-item{
+        margin: 0.3rem;
+    }
+    .watchlist-title{
+        font-size: 1.2rem;
+    }
+    .watchlist-media{
+        font-size: 0.6rem;
+    }
+    .watchlist-genres{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .watchlist-item{
+        width: 90%;
+        height: 20%;
+    }
+    .watchlist-img{
+        height: 100%;
+        width: 70%;
+    }
+    .watchlist-title{
+        font-size: 2rem;
+    }
+    .watchlist-genres{
+        font-size: 1.3rem;
+    }
+    .watchlist-media{
+        font-size: 1.3rem;
+    }
+    .watchlist-exit-button{
+        font-size: 1.2rem;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .watchlist-title{
+        font-size: 1.6rem;
+    }
+    .watchlist-genres{
+        font-size: 1.1rem;
+    }
+    .watchlist-media{
+        font-size: 1.1rem;
+    }
+    .watchlist-exit-button{
+        font-size: 1.1rem;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 570px){
+    .watchlist-item{
+        height: 15%;
+        padding: 1rem;
+    }
+    .watchlist-title{
+        font-size: 1.2rem;
+    }
+    .watchlist-genres{
+        font-size: 0.8rem;
+    }
+    .watchlist-media{
+        font-size: 0.8rem;
+    }
+    .watchlist-exit-button{
+        font-size: 0.8rem;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 470px){
+    .watchlist-item{
+        height: 15%;
+        padding: 0.8rem;
+        padding-left: 1.2rem;
+    }
+    .watchlist-img{
+        width: 90%;
+    }
+    .watchlist-title{
+        font-size: 1rem;
+    }
+    .watchlist-genres{
+        font-size: 0.7rem;
+    }
+    .watchlist-media{
+        font-size: 0.7rem;
+    }
+    .watchlist-exit-button{
+        font-size: 0.6rem;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 400px){
+    .watchlist-item{
+        height: 10%;
+    }
+    .watchlist-title{
+        font-size: 0.8rem;
+    }
+    .watchlist-genres{
+        font-size: 0.5rem;
+    }
+    .watchlist-media{
+        font-size: 0.5rem;
+    }
+    .watchlist-exit-button{
+        font-size: 0.6rem;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 350px){
+    .watchlist-item{
+        height: 10%;
+        padding-top: 0.3rem;
+        padding-bottom: 0.2rem;
+    }
+    .watchlist-img{
+        height: 90%;
+    }
+    .watchlist-title{
+        font-size: 0.7rem;
+    }
+    .watchlist-genres{
+        font-size: 0.4rem;
+    }
+    .watchlist-media{
+        font-size: 0.4rem;
+    }
+    .watchlist-exit-button{
+        font-size: 0.5rem;
+        height: 60%;
+    }
 }

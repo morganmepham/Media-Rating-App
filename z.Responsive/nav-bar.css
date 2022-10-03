@@ -2,32 +2,56 @@
     .nav-item{
         font-size: 2rem;
     }
+    .nav-item:active{
+        font-size: 2rem;
+    }
     .nav-item:hover{
         font-size: 2.5rem;
+    }
+    .selected-item:hover{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 1050px){
     .nav-item{
         font-size: 1.7rem;
     }
+    .nav-item:active{
+        font-size: 1.7rem;
+    }
     .nav-item:hover{
         font-size: 2.1rem;
+    }
+    .selected-item:hover{
+        font-size: 1.7rem;
     }
 }
 @media screen and (max-width: 850px){
     .nav-item{
         font-size: 1.4rem;
     }
+    .nav-item:active{
+        font-size: 1.4rem;
+    }
     .nav-item:hover{
         font-size: 1.8rem;
+    }
+    .selected-item:hover{
+        font-size: 1.4rem;
     }
 }
 @media screen and (max-width: 750px){
     .nav-item{
         font-size: 1.2rem;
     }
+    .nav-item:active{
+        font-size: 1.2rem;
+    }
     .nav-item:hover{
         font-size: 1.6rem;
+    }
+    .selected-item:hover{
+        font-size: 1.2rem;
     }
     .nav-bar{
         height: 13%;
@@ -37,16 +61,28 @@
     .nav-item{
         font-size: 1rem;
     }
+    .nav-item:active{
+        font-size: 1rem;
+    }
     .nav-item:hover{
         font-size: 1.4rem;
+    }
+    .selected-item:hover{
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 550px){
     .nav-item{
         font-size: 0.8rem;
     }
+    .nav-item:active{
+        font-size: 0.8rem;
+    }
     .nav-item:hover{
         font-size: 1rem;
+    }
+    .selected-item:hover{
+        font-size: 0.8rem;
     }
     .nav-bar{
         position: fixed;
@@ -61,7 +97,16 @@
 }
 @media screen and (max-width: 400px) {
     .nav-item{
+        font-size: 0.7rem;
+    }
+    .nav-item:active{
+        font-size: 0.7rem;
+    }
+    .nav-item:hover{
         font-size: 0.8rem;
+    }
+    .selected-item:hover{
+        font-size: 0.7rem;
     }
 
     .nav-bar{
@@ -72,7 +117,15 @@
     .nav-item{
         font-size: 0.6rem;
     }
-
+    .nav-item:active{
+        font-size: 0.6rem;
+    }
+    .nav-item:hover{
+        font-size: 0.7rem;
+    }
+    .selected-item:hover{
+        font-size: 0.6rem;
+    }
     .nav-bar{
         height: 7%;
     }

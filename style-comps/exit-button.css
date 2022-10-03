@@ -31,8 +31,8 @@
 .review-exit-button{
     margin-top: 0.5rem;
     height: auto;
-    width: 10%;
-    display: flex;
+    width: 20%;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: #242222;
