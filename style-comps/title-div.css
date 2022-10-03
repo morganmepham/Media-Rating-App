@@ -19,6 +19,7 @@
     font-size: 2rem;
     margin-right: 2rem;
     color: #FFF;
+    width: fit-content;
 }
 .filter-select{
     width: 60%;

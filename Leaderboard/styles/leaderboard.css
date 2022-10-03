@@ -55,10 +55,14 @@ body{
     align-items: center;
 
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr 0.3fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 1fr 0.3fr;
+    text-align: center;
 }
 .review-item-title{
     grid-column: 1/2;
+    width: 100%;
+    height: fit-content;
+    text-align: left;
 }
 .review-item-season{
     grid-column: 2/3;
@@ -71,6 +75,7 @@ body{
 .review-item-date{
     grid-column: 4/5;
     grid-row: 1/2;
+    margin-left: 0.5rem;
 }
 .review-item-score{
     grid-column: 5/6;

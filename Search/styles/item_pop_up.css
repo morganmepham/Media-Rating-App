@@ -135,11 +135,13 @@
 .item-title{
     font-size: 2.4rem;
     width: 65%;
-    height: fit-content;
+    height: 10%;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 0.5rem;
     justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
 }
 .watch-list-div{
     padding: 0;

@@ -1,0 +1,152 @@
+@media screen and (max-width: 1400px){
+    .title{
+        font-size: 2rem;
+    }
+    .filter-div{
+        left: 2.6rem
+    }
+    .filter-text{
+        font-size: 1.8rem;
+    }
+    .filter-select{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    .title{
+        font-size: 1.8rem;
+    }
+    .filter-div{
+        left: 2.3rem
+    }
+    .filter-text{
+        font-size: 1.6rem;
+    }
+    .filter-select{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .title{
+        font-size: 1.6rem;
+    }
+    .filter-div{
+        left: 2rem
+    }
+    .filter-text{
+        font-size: 1.4rem;
+        margin-right: 1.6rem;
+    }
+    .filter-select{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 860px){
+    .title-div{
+        height: 10%;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .filter-div{
+        left: 1.8rem
+    }
+    .filter-text{
+        font-size: 1.1rem;
+        margin-right: 1.3rem;
+    }
+    .filter-select{
+        font-size: 1rem;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 650px){
+    .title-div{
+        height: 9%;
+    }
+    .title{
+        font-size: 1.3rem;
+    }
+    .filter-div{
+        left: 1.6rem;
+        justify-content: flex-start;
+    }
+    .filter-text{
+        font-size: 1rem;
+        margin-right: 1.1rem;
+    }
+    .filter-select{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .title-div{
+        justify-content: flex-end;
+        height: 8%;
+    }
+    .title{
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+    .filter-div{
+        left: 1.8rem;
+        width: 50%;
+    }
+    .filter-text{
+        font-size: 1.2rem;
+        margin-right: 1.4rem;
+    }
+    .filter-select{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .title-div{
+        height: 7%;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+    .filter-div{
+        left: 1.6rem;
+    }
+    .filter-text{
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .filter-select{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 350px){
+    .title-div{
+        height: 6%;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .filter-div{
+        left: 1.4rem;
+    }
+    .filter-text{
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    .filter-select{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .title-div{
+        height: 5.5%;
+    }
+    .title{
+        font-size: 0.8rem;
+    }
+    .filter-text{
+        font-size: 0.6rem;
+    }
+    .filter-select{
+        font-size: 0.7rem;
+    }
+}
