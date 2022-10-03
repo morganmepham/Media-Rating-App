@@ -209,7 +209,6 @@ function add(){
 function openInfo(){
     document.querySelector('section').style.display = 'none'
     document.querySelector('.item-pop-up').style.display = 'flex'
-
 }
 function closeInfo(){
     document.querySelector('section').style.display = 'flex'

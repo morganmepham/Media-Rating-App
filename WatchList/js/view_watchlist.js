@@ -27,6 +27,7 @@ function displayWatchList(){
 
         const button = document.createElement('h3')
         button.classList.add('watchlist-exit-button')
+        button.classList.add('btn')
         button.innerHTML = 'Remove'
         entryDiv.appendChild(button)
 

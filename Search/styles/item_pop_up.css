@@ -45,7 +45,7 @@
 }
 .item-img{
     width: 90%;
-    height: 40%;
+    height: 50%;
 }
 .genres-div{
     margin-bottom: 0.5rem;
@@ -114,13 +114,13 @@
 .item-title{
     font-size: 2.4rem;
     width: 65%;
-    height: 10%;
+    height: 14%;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 0.5rem;
     justify-content: flex-start;
     align-items: flex-start;
-    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .watch-list-div{
     padding: 0;

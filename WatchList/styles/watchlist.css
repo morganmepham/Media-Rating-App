@@ -12,7 +12,9 @@ body{
     background-color: #2E2B2B;
 }
 
-
+.btn{
+    cursor: pointer;
+}
 /* Nav Section*/
 .nav-item_watch{
     color: #fff;

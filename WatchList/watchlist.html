@@ -13,21 +13,22 @@
     <link rel="stylesheet" href="../z.Responsive/nav-bar.css">
     <link rel="stylesheet" href="../z.Responsive/watchlist-resp.css">
     <script src = './js/view_watchlist.js' type = 'module'></script>
+    <script src = './js/sort_watchlist.js' defer></script>
     <title>Movie App - Watch list</title>
 </head>
 <body>
     <nav class = 'nav-bar nav-bar_search'>
-        <h2 class = 'nav-item nav-item_search'><a href = '../index.html'>Search</a></h2>
+        <h2 class = 'nav-item nav-item_search btn'><a href = '../index.html'>Search</a></h2>
         <span class = 'nav-line nav-line_1'></span>
         <h2 class = 'nav-item nav-item_watch selected-item'>Watch List</h2>
         <span class = 'nav-line nav-line_2'></span>
-        <h2 class = 'nav-item nav-item_leader'><a href = '../Leaderboard/leaderboard.html'>Leaderboard</a></h2>
+        <h2 class = 'nav-item nav-item_leader btn'><a href = '../Leaderboard/leaderboard.html'>Leaderboard</a></h2>
     </nav>
 
     <div class='title-div'>
         <div class='filter-div'>
             <h4 class = 'filter-text'>Filter by:</h4>
-            <select class = 'filter-select'>
+            <select class = 'filter-select btn'>
                 <option>All</option>
                 <option>Movies</option>
                 <option>Tv</option>

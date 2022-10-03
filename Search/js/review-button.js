@@ -6,6 +6,8 @@ function displayReviewSection(){
     reviewSection.style.display = 'flex'
     const itemDisplay = document.querySelector('.outer-popup')
     itemDisplay.style.display = 'none'
+    const itemDisplayButton = document.querySelector('.popup-exit-div')
+    itemDisplayButton.style.display = 'none'
 }
 
 
@@ -17,4 +19,6 @@ function exitReview(){
     reviewSection.style.display = 'none'
     const itemDisplay = document.querySelector('.outer-popup')
     itemDisplay.style.display = 'flex'
+    const itemDisplayButton = document.querySelector('.popup-exit-div')
+    itemDisplayButton.style.display = 'flex'
 }
