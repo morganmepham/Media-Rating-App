@@ -80,10 +80,16 @@
     .disc-title{
         font-size: 1.3rem;
     }
+    .no-reviews{
+        font-size: 3.5rem;
+    }
 }
 @media screen and (max-width: 870px){
     .item-img{
         height: 40%;
+    }
+    .no-reviews{
+        font-size: 3rem;
     }
 }
 @media screen and (max-width: 750px) {
@@ -112,6 +118,9 @@
     }
     .item-img{
         height: 37%;
+    }
+    .no-reviews{
+        font-size: 2.5rem;
     }
 }
 @media screen and (max-width: 600px) {
@@ -151,6 +160,9 @@
     }
     .item-img{
         height: 30%;
+    }
+    .no-reviews{
+        font-size: 2.2rem;
     }
 }
 @media screen and (max-width: 530px){
@@ -214,10 +226,16 @@
     .item-img{
         height: 25%;
     }
+    .no-reviews{
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 350px){
     .item-img{
         height: 20%;
+    }
+    .no-reviews{
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 300px){
@@ -232,5 +250,8 @@
     }
     .item-img{
         height: 15%;
+    }
+    .no-reviews{
+        font-size: 1.6rem;
     }
 }
