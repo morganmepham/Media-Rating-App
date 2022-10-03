@@ -67,30 +67,35 @@ if(submitButton){
 }
 
 class Review{
-    constructor(title, date, score, note, mediaType = 'Movie'){
+    constructor(id, title, date, score, note, mediaType = 'Movie'){
         this.title = title
         this.date = date
         this.score = score
         this.note = note
         this.mediaType = mediaType
+        this.id = id
     }
 }
 
 class TvReview extends Review{
-    constructor (title, date, score, note, season, episode, mediaType = 'Tv'){
-        super(title, date, score, note)
+    constructor (id, title, date, score, note, season, episode, mediaType = 'Tv'){
+        super(id, title, date, score, note)
         this.season = season
         this.episode = episode
         this.mediaType = mediaType
     }
 }
+function genRandomId(){
+    let number = Math.floor(Math.random() * 999999)
+    return number
+}
 function createReview(){
     const seasonDisplay = document.querySelector('.review-season')
     let review
     if(seasonDisplay.style.display === 'block'){
-        review = new TvReview(getTitle(), getDate(), getScore(), getNotes(), getSeason(), getEpisode())
+        review = new TvReview(genRandomId(), getTitle(), getDate(), getScore(), getNotes(), getSeason(), getEpisode())
     }else{
-        review = new Review(getTitle(), getDate(), getScore(), getNotes())
+        review = new Review(genRandomId(), getTitle(), getDate(), getScore(), getNotes())
     }
     let reviews = getReviews()
     console.log(reviews)

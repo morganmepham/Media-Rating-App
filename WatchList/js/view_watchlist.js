@@ -41,11 +41,11 @@ function displayWatchList(){
         genres.classList.add('watchlist-genres')
         entryDiv.appendChild(genres)
 
-
         watchListDiv.appendChild(entryDiv)
     }
     addEventListeners()
 }
+
 
 
 window.addEventListener('load', displayWatchList)

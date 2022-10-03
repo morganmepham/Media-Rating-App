@@ -72,6 +72,9 @@
         margin: 0.4rem;
         border: 0.15rem solid #fff;
     }
+    .remove-review-button{
+        padding: 0.3rem;
+    }
 }
 @media screen and (max-width: 600px){
     .leader-info{
@@ -83,6 +86,7 @@
     }
     .review-item-title{
         font-size: 0.8rem;
+        margin-left: 0.3rem;
     }
     .review-item{
         margin: 0.35rem;

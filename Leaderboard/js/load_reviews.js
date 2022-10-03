@@ -1,7 +1,37 @@
 
-
 import { getReviews } from '../../Search/js/create_review.js';
 import { formatDate } from '../../Search/js/resources.js';
+
+function addEventListeners(){
+	const removeButtons = document.querySelectorAll('.remove-review-button')
+	removeButtons.forEach(button => {
+    button.addEventListener('click', removeItemFromGrid)
+});
+
+
+function removeItemFromGrid(e){
+	removeFromData(e)
+	const item = e.target.parentNode
+	const grid = item.parentNode
+	grid.removeChild(item)
+}
+function removeFromData(e){
+	const itemID = e.target.parentNode.id
+	let data = getReviews()
+	let reviews = data.reviews
+	let count = 0
+	for(let i = 0; i <= reviews.length - 1; i++){
+		console.log(count)
+		count++
+		if(reviews[i].id == itemID){
+			reviews.splice([i], 1)
+		}
+	}
+    const returnData = JSON.stringify(data)
+    localStorage.setItem('data', returnData)
+}
+
+}
 function displayReviews(e) {
 	let reviews = getReviews();
 	if (reviews.reviews) {
@@ -65,12 +95,21 @@ function displayReviews(e) {
 		note.classList.add('leader-info')
 		entryDiv.appendChild(note);
 
+		const button = document.createElement('h3')
+		button.classList.add('remove-review-button')
+		button.classList.add('leader-info')
+		button.innerHTML = 'Delete'
+		entryDiv.appendChild(button)
+
 		const reviewGrid = document.querySelector('.leaderboard-div');
 		entryDiv.classList.add('review-item')
 		entryDiv.style.order = 100 - reviews[i].score 
+
+		entryDiv.id = reviews[i].id
 		reviewGrid.appendChild(entryDiv);
 	}
 	e.preventDefault()
+	addEventListeners()
 }
 
 
